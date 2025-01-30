@@ -143,7 +143,7 @@ ul {
 }
 
 /* Botão de sortear título */
-.button-draw {
+#selecionarAmigoBtn {
     display: flex;
     align-items: center;
     width: 100%;
