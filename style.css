@@ -146,11 +146,12 @@ ul {
 #selecionarAmigoBtn {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 80%;
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+    gap: 10px;
 }
 
 .button-draw img {

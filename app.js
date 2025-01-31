@@ -9,18 +9,16 @@ function adicionarAmigo() {
     let amigo = document.getElementById('amigo').value;
 
     // Valida a entrada
-    if (amigo.trim() === '') {
+    if (amigo.length === 0) {
         alert('Por favor, insira um nome.');
-        return;
+    } else {
+        alert('Nome adicionado.');
+        amigos.push(amigo);
+        document.getElementById('amigo').value = '';
+        atualizarListaAmigos();
     }
 
-    // Atualiza o array de amigos
-    amigos.push(amigo);
-
     // Limpa o campo de entrada
-    document.getElementById('amigo').value = '';
-
-     // Atualiza a lista de amigos
      atualizarListaAmigos();
 }
 
